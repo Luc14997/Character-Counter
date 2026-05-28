@@ -1,4 +1,81 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Changa One", sans-serif;
+}
+
+:root {
+    /*Colors*/
+    --mainBackground: #12131A;
+    --cardsTextareaBackground: #1C1F2A;
+    --mainText: #F2F2F7;
+    --secondText: #B4B7C9;
+    --violetCard: #C99DFF;
+    --orangeCard: #FFB21E;
+    --coralCard: #FF8A65;
+    -progressBar: #D19BFF;
+    --subtleEdges: #2A2D3A;
+    /*Typography*/
+    --fontMain: "Changa One", sans-serif; 
+    --fontSecond: "Changa One", sans-serif;
+}
+
+body {
+    background-color: var(--mainBackground);
+}
+
+.logo {
+    display: flex;
+    width: 120px;
+    height: auto;
+    position: top;
+}
+
+.cc {
+    display: flex;
+    position: top;
+    color: var(--secondText)
+}
+
+.light {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.title {
+    color: var(--mainText);
+    text-align: center;
+    font-size: 50px;
+}
+
+textarea {
+    width: 800px;
+    height: 150px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+
+p {
+    margin: 30px;
+}
+
+section div .controls {
+    display: flex;
+    color: var(--secondText);
+}
+
+section div .time {
+    display: flex;
+    color: var(--secondText);
+    right: 60px;
+    center: 0px;
+}
+
+section div ul {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
 }
