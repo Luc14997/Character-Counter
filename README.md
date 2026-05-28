@@ -18,3 +18,9 @@ Practicar:
 - GitHub
 
 ## Estructura del proyecto:
+
+## Resolución de CSS:
+
+## Dificultades encontradas:
+
+## Resultado final:
