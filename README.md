@@ -23,9 +23,48 @@ Practicar:
 ## Estructura del proyecto:
 ```text
 mi-proyecto/
-html
-```
+text
+└──index.html      #estructura principal de la página
+└──css/
+|    └──style.css  #estilos visuales del proyecto
+└──readme.md       #documentación del proyecto
 
+index.html
+└──section       
+     └──header          |
+     └──h1              |HERO
+     └──div             |
+└──section
+     └──div             |
+         └──label       |
+         └──label       |CHECKBOX
+     └──div             |
+         └──label       |
+└──section
+     └──div             |
+         └──img         |
+         └──p           |
+     └──div             |
+         └──img         |METRICAS EN IMAGEN
+         └──p           |
+     └──div             |
+         └──img         |
+         └──p           |
+└──section
+     └──h3
+     └──label           |
+         └──progress    |
+     └──label           |
+         └──progress    |
+     └──label           |
+         └──progress    | BARRAS PROGRESO
+     └──label           |
+         └──progress    |
+     └──label           |
+         └──progress    |
+     └──label           | SELECTOR
+         └──select      |
+```
 ## Resolución de CSS:
 
 ## Dificultades encontradas:
