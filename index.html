@@ -13,76 +13,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <div>
-            <img src="assets/images/logo.jpg" alt="logo" class="logo">
-            <p class="cc">Character Counter</p>
-            <button class="light"><img src="assets/images/sol.jpg" alt="imagen de sol"></button>
-            <h2 class="title">Analyze your text</h2>
-            <h2>in real-time.</h2>
-            <textarea rows="6">
-                <p>Design is the silent ambassador of your brand. Simplicity is key to effective communication, creating clarity in every interaction. A great design transforms complex ideas into elegant solutions, making them easy to understand. It blends aesthetics and functionality seamlessly.</p>
-            </textarea>
-        </div>
-        <div>
-                <label for="">
-                    Exclude Spaces
-                    <input type="checkbox">
-                </label>
-                <label for="">
-                    Set Character Limit
-                    <input type="checkbox">
-                </label>
-                <p class="time">Approx. reading time: &lt;1 minute</p>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <img src="assets/images/violet.jpg" alt="Fondo violeta">
-                    <p><strong>278</strong>Total Characters</p>
-                </li>
-                <li>
-                   <img src="assets/images/orange.jpg" alt="Fondo naranja">
-                    <p><strong>39</strong>Word Count</p> 
-                </li>
-                <li>
-                    <img src="assets/images/pastel-orange.jpg" alt="Fondo naranja pastel">
-                    <p><strong>04</strong>Sentence Count</p>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h4>Letter Density</h4>
-            <div>
-                <label for="">
-                    40 (16.06%)
-                    <input type="range">
-                    <p>E</p>
-                </label>
-                <label for="">
-                    29 (11.65%)
-                    <input type="range">
-                    <p>I</p>
-                </label>
-                <label for="">
-                    28 (11.24%)
-                    <input type="range">
-                    <p>T</p>
-                </label>
-                <label for="">
-                    22 (8.84%)
-                    <input type="range">
-                    <p>O</p>
-                </label>
-                <label for="">
-                    21 (8.43%)
-                    <input type="range">
-                    <p>N</p>
-                </label>
+    <section class="hero">
+        <header>
+            <div class="principal">
+                <img src="assets/images/logo.jpg" alt="logo" class="logo">
+                <p class="cc">Character Counter</p>
             </div>
-            <select><p>See more</p></select>
+            <div>
+                <button type="button"><img src="assets/images/sol.jpg" alt="light" width="50px" height="50px"></button>
+            </div>
+        </header>
+        <h1 class="title">Analyze your text <br> in real-time.</h1>
+        <div class="contenedor">
+            <label class="flotante">Design is the silent ambassador of your brand. Simplicity is key to effective <br> communication, creating clarity in every interaction. A great design <br> transforms complex ideas into elegant solutions, making them easy to <br> understand. It blends aesthetics and functionality seamlessly.</label>
+            <textarea></textarea>
+        </div>
+    <section class="controls">
+        <div class="check">
+            <label>
+                    <input type="checkbox" class="checkbox">
+                    Exclude Spaces
+                </label>
+                <label>
+                    <input type="checkbox" class="checkbox">
+                    Set Character Limit
+                </label>
+        </div>
+        <div>
+            <label class="Approx">Approx. reading time: <1 minute</label>
         </div>
     </section>
+    <section class="metrics"></section>
+        <div class="metric">
+            <img src="assets/images/violet.jpg" alt="Fondo violeta" class="galeryitem">
+            <p class="top"><b>278</b><br>Total Characters</p>
+        </div>
+        <div class="metric">
+            <img src="assets/images/orange.jpg" alt="Fondo naranja" class="galeryitem">
+            <p class="top"><b>39</b><br>Word Count</p>
+        </div>
+        <div class="metric">
+            <img src="assets/images/pastel.jpg" alt="Fondo naranja pastel" class="galeryitem">
+            <p class="top"><b>04</b><br>Sentence Count</p>
+        </div>
+    <section class="letter"></section>
+        <h3>Letter Density</h3>
+            <label>
+                E
+                <progress value="16.06" max="100"></progress>
+                40 (16.06%)
+            </label>
+            <label>
+                I
+                <progress value="11.65" max="100"></progress>
+                29 (11.65%%)
+            </label>
+            <label>
+                T
+                <progress value="11.24" max="100"></progress>
+                28 (11.24%)
+            </label>
+            <label>
+                O
+                <progress value="8.84" max="100"></progress>
+                22 (8.84%)
+            </label>
+            <label>
+                N
+                <progress value="8.43" max="100"></progress>
+                21 (8.43%)
+            </label>
+            <br>
+            <label>
+                See more
+                <select></select>
+            </label>
+    </section>
+    
     <footer>
         <p>Diseñado por Lucia Tesei</p>
     </footer>

@@ -1,92 +1,69 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    font-family: "Changa One", sans-serif;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-:root {
-    /*Colors*/
-    --mainBackground: #12131A;
-    --cardsTextareaBackground: #1C1F2A;
-    --mainText: #F2F2F7;
-    --secondText: #B4B7C9;
-    --violetCard: #C99DFF;
-    --orangeCard: #FFB21E;
-    --coralCard: #FF8A65;
-    -progressBar: #D19BFF;
-    --subtleEdges: #2A2D3A;
-    /*Typography*/
-    --fontMain: "Changa One", sans-serif; 
-    --fontSecond: "Changa One", sans-serif;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
 }
 
-body {
-    background-color: var(--mainBackground);
+section header {
+    position: sticky;
+    margin: 10px 10px 30px 10px;
+    display: inline-flex;
+    align-items: left;
+    gap: 20px;
 }
 
-.logo {
+section header .logo {
     display: flex;
     width: 120px;
     height: auto;
     position: top;
+    transform: scale (0.5, 0.5);
 }
 
-.cc {
+section header button {
+    border-style: none;
+    box-shadow: none;
+    background-color: grey;
+    align-items: right;
+    transform: scale(0.1, 0.1);
+    display: inline-block;
+}
+
+section header button:hover {
+    background-color: white;
+}
+
+section header textarea {
+    transform: scaleX(6);
+}
+
+section .galery {
     display: flex;
-    position: top;
-    color: var(--secondText)
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 15px;
+    column-count: 3;
 }
 
-.light {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.title {
-    color: var(--mainText);
-    text-align: center;
-    font-size: 50px;
-}
-
-textarea {
-    width: 800px;
-    height: 150px;
-    margin: 20px 10px;
-    border-radius: 10px;
-    color: var(--cardsTextareaBackground);
-}
-
-p {
-    margin: 30px;
-}
-
-section div .controls {
-    display: flex;
-    color: var(--secondText);
-}
-
-section div .time {
-    display: flex;
-    color: var(--secondText);
-    right: 60px;
-    center: 0px;
-}
-
-section div ul {
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-}
-
-section div ul li img {
+section div .galeryitem {
     position: relative;
-}
-
-section div ul li p {
-    color: var(--secondText);
-    font-size: 30px;
-    position: absolute;
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    clip-path:calc(50)
 }
