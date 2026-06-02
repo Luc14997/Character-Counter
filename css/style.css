@@ -1,69 +1,188 @@
+:root {
+    /*Paleta de colores*/
+    --fondoPrincipal: #12131A;
+    --fondoCardtextarea: #1C1F2A;
+    --textoPrincipal: #F2F2F7;
+    --textoSecundario: #B4B7C9;
+    --barraProgreso: #D19BFF; 
+    --bordesSutiles: #2A2D3A;
+    /*Tipografia*/
+    @font-face {
+        font-family: "Changa One", sans-serif;
+        src: url(https://fonts.google.com/selection/embed);
+    }
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background-color: ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    background-color: var(--fondoPrincipal);
+    margin: 50px;
+    padding: 10px 10px 20px 10px;
 }
 
-section {
+header {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+body .hero header .principal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+body section header .logo, .counter {
+    position: relative;
+    display: inline;
+    flex-direction: row;
+    top:auto;
+}
+
+body header div .counter {
+    color: var(--textoSecundario);
+    font-size: 40px;
+}
+
+body section header button {
+    background-color: var(--fondoCardtextarea);
+    border-inline: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 10px;
+}
+
+body section header button:hover {
+    background-color: var(--fondoPrincipal);
+}
+
+body section h1 {
+    font-size: 80px;
     text-align: center;
+    color: var(--textoPrincipal);
+}
+
+body section .contenedor {
+    position: relative;
+    margin-top: 20px;
+}
+
+body section .contenedor .flotante {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 10px;
+    font-family: var(--textoPrincipal);
+    color: var(--textoSecundario);
+    font-weight: normal;
+    font-size: 40px;
+}
+
+body section .contenedor textarea {
     width: 100%;
-    max-width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    resize: none;
+    background-color: var(--fondoCardtextarea);
 }
 
-section header {
-    position: sticky;
-    margin: 10px 10px 30px 10px;
-    display: inline-flex;
-    align-items: left;
-    gap: 20px;
-}
-
-section header .logo {
+body .controls {
     display: flex;
-    width: 120px;
-    height: auto;
-    position: top;
-    transform: scale (0.5, 0.5);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-section header button {
-    border-style: none;
-    box-shadow: none;
-    background-color: grey;
-    align-items: right;
-    transform: scale(0.1, 0.1);
+body .controls .check {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+body .controls .check .checkbox {
+    appearance: none;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--fondoPrincipal);
+    border-radius: 5px;
+    border-color: var(--textoSecundario);
+}
+
+body .metrics {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+body .metrics .metric {
+    position: relative;
     display: inline-block;
 }
 
-section header button:hover {
-    background-color: white;
+body .metrics .metric .top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -70%);
+    color: black;
+    padding: 10px;
+    font-size: 40px;
 }
 
-section header textarea {
-    transform: scaleX(6);
+body .metrics .metric .top b {
+    font-size: 130px;
 }
 
-section .galery {
+body .metrics .metric .img {
+    border-radius: 20px;
+}
+
+body section h3 {
+    font-size: 40px;
+    color: var(--textoSecundario);
+}
+
+body section label {
+    font-size: 30px;
+    color: var(--textoSecundario);
+    letter-spacing: 10px;
+}
+
+body .letter {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 0 15px;
-    column-count: 3;
+    flex-direction: column;
+    gap: 20px;
 }
 
-section div .galeryitem {
-    position: relative;
-    width: calc(25% - 20px);
-    height: auto;
-    margin: 10px;
-    cursor: pointer;
-    clip-path:calc(50)
+body section label progress {
+    appearance: none;
+    width: 85%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--fondoCardtextarea);
+}
+
+body section label progress::-webkit-progress-bar {
+    background-color: var(--fondoCardtextarea);
+}
+
+body section label progress::-webkit-progress-value {
+    background-color: var(--barraProgreso);
+    border-radius: 10px;
+}
+
+body section label select {
+    border: none;
+    background-color: var(--fondoPrincipal);
+    color: var(--textoSecundario);
+}
+
+body footer {
+    color: var(--textoSecundario)
 }
