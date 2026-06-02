@@ -21,11 +21,15 @@ Practicar:
 - remove.bg
 
 ## Estructura del proyecto:
+```text
+mi-proyecto/
+html
+```
 
 ## Resolución de CSS:
 
 ## Dificultades encontradas:
 Varias dificultades, entre ellas que la página me quedara como un seccián y no como una pagina completa. Faltó agregarle una sección más, pero hacer eso me complicaba para estilar luego.
 ## Resultado final:
-![Resultado final del proyecto](image.jpg)
-![Resultado  final del proyecto](captura2.jpg)
+![Resultado final del proyecto](assets/images/primerparte.jpg)
+![Resultado  final del proyecto](assets/images/segundaparte.jpg)
